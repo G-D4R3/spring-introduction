@@ -15,7 +15,7 @@ public class MemberService {
 
     // MemberRepository를 Service에서 직접 new 해서 만들지 않고 외부에서 injection함.
     // => Dependency Injection
-
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
