@@ -15,6 +15,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// implementation 'org.springframework.boot:spring-boot-starter-jdbc' // 아직 사용자가 쿼리를 직접 작성해야함
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // jpa를 사용하면 사용자가 쿼리를 작성하지 않아도 된다. 객체 중심의 설계로 전환할 수 있음
+	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
